@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #282e3c;
+  border-radius: 10px;
+  padding: 12px;
+  width: 100%;
+
+  h3,
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+  }
+
+  span {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+}
