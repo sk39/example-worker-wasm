@@ -12,9 +12,9 @@ use web_sys::{Request, RequestInit, RequestMode, Response};
 pub async fn fetch_examples(is_worker: bool) -> Result<JsValue, JsValue> {
     // utils::set_panic_hook();
 
-    let mut opts = RequestInit::new();
-    opts.method("GET");
-    opts.mode(RequestMode::Cors);
+    let opts = RequestInit::new();
+    opts.set_method("GET");
+    opts.set_mode(RequestMode::Cors);
 
     let request = Request::new_with_str_and_init("/api/examples", &opts)?;
 
