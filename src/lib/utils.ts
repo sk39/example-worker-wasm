@@ -33,7 +33,7 @@ export function convertExampleItem(item: ExampleItem): ExampleItem {
     id: item.id,
     title: formatTitle(item.title),
     body: formatBody(item.body),
-    fibValue: fib(Number(item.id) % 26),
+    fibValue: fib(Number(item.id) % 27),
     createdAt: dayjs(item.createdAt).format("YYYY/MM/DD"),
     updatedAt: dayjs(item.updatedAt).format("YYYY/MM/DD"),
   };

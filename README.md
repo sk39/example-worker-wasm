@@ -1,17 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# example-worker-wasm
+Examples of Next.js with Web Workers and WebAssembly (Rust) for improved performance.
 
-First, run the development server:
+## Requirement
+* Node.js v20 or later.
+* [Rust](https://www.rust-lang.org/tools/install)
+  * [wasm-pack](https://rustwasm.github.io/wasm-pack/installer/)
+
+## Build Setup
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# install dependencies
+$ yarn
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# serve with hot reload at localhost:3000
+$ yarn dev
+
+# build for production and launch server
+$ yarn build
+$ yarn start
+```

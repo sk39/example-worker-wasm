@@ -10,7 +10,7 @@ pub fn convert_example_item(item: &mut ExampleItem) {
     item.title = format_title(&item.title);
     item.body = item.body.to_uppercase();
 
-    let id_as_number = item.id.parse::<u32>().unwrap_or(0) % 26;
+    let id_as_number = item.id.parse::<u32>().unwrap_or(0) % 27;
     item.fib_value = Some(fib(id_as_number));
     item.created_at = format_datetime(&item.created_at);
     item.updated_at = format_datetime(&item.updated_at);
