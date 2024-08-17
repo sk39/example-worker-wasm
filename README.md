@@ -10,13 +10,15 @@ Examples of Next.js with Web Workers and WebAssembly (Rust) for improved perform
 ## Build Setup
 
 ```bash
-# install dependencies
+# Install dependencies
 $ yarn
 
-# serve with hot reload at localhost:3000
+# Run the development mode. wasm(rust) is also development mode, too slower.
 $ yarn dev
 
-# build for production and launch server
+# Run the production mode
 $ yarn build
 $ yarn start
 ```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
